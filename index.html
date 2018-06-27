@@ -1,0 +1,210 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Pic server">
+    <meta name="keywords" content="Photos, Pics, Photographers, Artists">
+    <meta name="author" content="Mukul Dwivedi">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <title>Photography</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <nav class="navbar  navbar-expand-sm navbar-dark fixed-top" style="background-color: rgba(192,192,192,0.8);">
+      <a class=" navbar-brand logo" href="#" style="color:black;">Pic-O-Click</a>
+          <ul class="navbar-nav" style="margin-left: 30%;"">
+            <li class="nav-item mx-1"><button class="btn btn-light"><a class="nav-link" href="#" style="color:black; font-weight: bold;">HOME</a></button></li>
+            <li class="nav-item mx-1"><button class="btn btn-light"><a class="nav-link" href="#" style="color:black; font-weight: bold;">GALLERY</a></button></li>
+            <li class="nav-item mx-1"><button class="btn btn-light"><a class="nav-link" href="#" style="color:black; font-weight: bold;">ABOUT</a></button></li>
+            <li class="nav-item mx-1 mr-2"><button class="btn btn-light"><a class="nav-link" href="#" style="color:black; font-weight: bold;">CONTACT</a></button></li>
+          </ul>
+          <div class="input-group">
+            <form class="form-inline">
+              <input name="search" class="bg-light form-control mr-sm-2" type="text" placeholder="Search here..">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </input>
+            </form>
+          </div>
+        </nav>
+        <br><br>
+        <div class="container mt-5">
+      <div id="slider" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+          </ul>
+           <div class="carousel-inner ">
+              <div class="carousel-item active">
+                  <img class="mx-auto d-block img-fluid" src="img/nature.jpeg" alt="Nature" width="80%" height="400px" >
+                    
+              </div>
+              <div class="carousel-item">
+                  <img class="mx-auto d-block img-fluid" src="img/abstract.jpg" alt="Abstract" width="80%" height="400px">
+                     
+              </div>
+              <div class="carousel-item">
+                  <img class="mx-auto d-block img-fluid" src="img/camera1.jpg" alt="Camera" width="80%" height="400px">
+                    
+              </div>
+              
+              <a class="carousel-control-prev" href="#slider" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#slider" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              </div>
+          </div>    
+    </div>
+    <div class="container mt-4 my-3">
+      <div class="card-group">
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Abstract Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/abstract.jpg" alt="Camera" width="80%" height="400px">
+        </div>
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Nature Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/nature.jpeg" alt="Camera" width="80%" height="400px">
+        </div>
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Food Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/food.jpg" alt="Camera" width="80%" height="400px">
+        </div> 
+      </div>
+       <div class="card-group mt-3">
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Landscape Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/land.jpeg" alt="Camera" width="80%" height="400px">
+        </div>
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Architectural Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/architecture.jpg" alt="Camera" width="80%" height="400px">
+        </div>
+        <div class="card bg-secondary text-white mx-3">
+          <div class="card-body text-center">Documentry Photography</div>
+          <img class="mx-auto d-block img-fluid pb-2 px-2" src="img/doc.jpg" alt="Camera" width="80%" height="400px">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <button type='button' class="btn btn-warning center-block row-center" data-toggle="modal" data-target="#popUpWindow">Log-In</button>
+    
+    <div class="modal fade" id="popUpWindow">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Login Form</h3>
+          </div>
+          <div class="modal-header">
+            <form role="form">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email"/>
+                <input type="password" class="form-control" placeholder="Password" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Log In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+    <h2 class="text-center text-bold ">Photography-An Eye Of World</h2>
+    <p class="text-justify">Photography is the science, art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic filmTypically, a lens is used to focus the light reflected or emitted from objects into a real image on the light-sensitive surface inside a camera during a timed exposure. With an electronic image sensor, this produces an electrical charge at each pixel, which is electronically processed and stored in a digital image file for subsequent display or processing. The result with photographic emulsion is an invisible latent image, which is later chemically "developed" into a visible image, either negative or positive depending on the purpose of the photographic material and the method of processing. A negative image on film is traditionally used to photographically create a positive image on a paper base, known as a print, either by using an enlarger or by contact printing.Photography is employed in many fields of science, manufacturing (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication</p>
+
+    <button type="button" class="btn btn-primary justify-content-center" data-toggle="modal" data-target="#myModal">
+      Click to read more
+    </button>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Go to the below link to know more</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <a hred="https://en.wikipedia.org/wiki/Photography">https://en.wikipedia.org/wiki/Photography</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center mt-5">DIFFERENT TYPES OF PHOTOGRAPHY</h1>
+  <div class="container mt-5 ">
+  <div class="row">
+  <div class="col-lg-3">
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse1">Abstract Photography</button>
+    <div class="collapse mb-5" id="collapse1"><div class="card"><div class="card-body">Abstract photography, sometimes called non-objective, experimental, conceptual or concrete photography, is a means of depicting a visual image that does not have an immediate association with the object world and that has been created through the use of photographic equipment, processes or materials.</div></div></div></div>
+    <div class="col-lg-3">
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse2">Documentry Photography</button>
+    <div class="collapse mb-5" id="collapse2"><div class="card"><div class="card-body">Documentary photography usually refers to a popular form of photography used to chronicle events or environments both significant and relevant to history and historical events as well as everyday life. It is typically covered in professional photojournalism, or real life reportage, but it may also be an amateur, artistic, or academic pursuit.</div></div></div></div>
+    <div class="col-lg-3"><button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse3">Landscape Photography</button>
+    <div class="collapse mb-5" id="collapse3"><div class="card"><div class="card-body">Landscape photography shows spaces within the world, sometimes vast and unending, but other times microscopic. Landscape photographs typically capture the presence of nature but can also focus on man-made features or disturbances of landscapes.</div></div></div></div>
+    <div class="col-lg-3"><button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse4">Architectural Photography</button>
+    <div class="collapse mb-5" id="collapse4"><div class="card"><div class="card-body">Architectural photography is commonly described as the form of photography that uses buildings and other structures as subjects.</div></div></div></div>
+
+  </div>
+  </div>
+
+
+  <footer class="page-footer font-small mt-1 pt-3 sticky-down container-fluid fixed-bottom" style="background-color: rgba(192,192,192,0.8);">
+    <div class="container">
+      <div class="row pb-1">
+        <div class="col-md-12">
+          <div class="mb-1 d-flex justify-content-center">
+            <a class="fb-ic">
+              <i class="fa fa-facebook fa-lg white-text mr-md-3"> </i>
+            </a>
+            <a class="tw-ic"
+              <i class="fa fa-twitter fa-lg white-text mr-md-3"> </i>
+            </a>
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus fa-lg white-text mr-md-3"> </i>
+            </a>
+            <a class="li-ic">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-3"> </i>
+            </a>
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-md-3"> </i>
+            </a>
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text"> </i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copyright text-center py-1">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/">Pic-o-click.com</a>
+    </div>
+  </footer>
+    <div style="margin-top:100px;"></div>
+    <script>
+      $('.carousel').carousel({
+        interval:1000
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+  </html>
